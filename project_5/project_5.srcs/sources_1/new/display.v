@@ -45,7 +45,7 @@ module display(A1, B1, C1, D1, a, b, c, d, e, f, g, dp, enable);
 	nor (c, A1_B1,A1_D1,B1_C1_D1_,A1B1_C1_);
 
 	// Segment d
-	
+	test
 	// Segment e
 	
 	// Segment f
