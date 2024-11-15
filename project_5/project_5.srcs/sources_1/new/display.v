@@ -25,25 +25,27 @@ module display(A1, B1, C1, D1, a, b, c, d, e, f, g, dp, enable);
 	    (D1_, D1);
 	
 	// Segment a
-	and (A1_C1, A1_, C1),
-	    (A1_B1D1, A1_,B1, D1),
-	    (B1_C1_D1_,B1_,C1_,D1_),
-        (A1B1_C1_,A1,B1_,C1_);
-	nor (a, A1_C1,A1_B1D1,B1_C1_D1_,A1B1_C1_);   // Use NOR for A1C1TIVE LOW output
-	
-	// Segment b -- Insert your design here for segment b (reuse gates wherever possible)
-	and (A1_B1_,A1_,B1_),
-        (A1_C1D1,A1_,C1, D1),
-        (A1_C1_D1_,A1_,C1_,D1_),
-        (A1B1_C1_,A1,B1_,C1_);
-    nor (b, A1_B1_,A1_C1D1,A1_C1_D1_, A1B1_C1_);  // already have C1_D1_
-// Segment c
-	and (A1_B1, A1_, B1),
-	    (A1_D1, A1_, D1),
-	    (B1_C1_D1_,B1_,C1_,D1_),
-	    (A1B1_C1_,A1,B1_,C1_);               
-	nor (c, A1_B1,A1_D1,B1_C1_D1_,A1B1_C1_);
-
+	and (B1_D1_, B1_, D1_),
+	    (A1D1_, A1, D1_),
+	    (A1B1_C1_, A1, B1_, C1_),
+	    (B1C1, B1, C1),
+	    (A1_C1, A1_, C1),
+	    (A1_B1D1, A1_, B1, D1);
+	nor (a, B1_D1_, A1D1_, A1B1_C1_, B1C1, A1_C1, A1_B1D1);   // Use NOR for A1C1TIVE LOW output
+	// Segment b
+	and (B1_D1_, B1_, D1_),
+        (A1_B1_, A1_, B1_),
+        (A1_C1_D1_, A1_, C1_, D1_),
+        (A1_C1D1, A1_, C1, D1),
+        (A1C1_D1, A1, C1_, D1);
+    nor (b, B1_D1_, A1_B1_, A1_C1_D1_, A1_C1D1, A1C1_D1);  // already have C1_D1_
+    // Segment c
+	and (A1B1_, A1, B1_),
+	    (A1_B1, A1_, B1),
+	    (C1_D1, C1_, D1),
+	    (A1_C1_, A1_, C1_),
+	    (A1_D1, A1_, D1);
+	nor (c, A1B1_, A1_B1, C1_D1, A1_C1_, A1_D1);
 	// Segment d
 	and (A1C1_, A1, C1_),
 	    (B1_C1_D1_, B1_, C1_, D1_),

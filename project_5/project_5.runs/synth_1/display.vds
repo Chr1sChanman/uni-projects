@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Fri Nov 15 15:25:48 2024
-# Process ID: 8900
+# Start of session at: Fri Nov 15 15:43:16 2024
+# Process ID: 8404
 # Current directory: C:/Users/Chris/Desktop/CECS-201/project_5/project_5.runs/synth_1
 # Command line: vivado.exe -log display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source display.tcl
 # Log file: C:/Users/Chris/Desktop/CECS-201/project_5/project_5.runs/synth_1/display.vds
@@ -12,46 +12,56 @@
 # Running On: Chris-PC, OS: Windows, CPU Frequency: 2295 MHz, CPU Physical cores: 2, Host memory: 17048 MB
 #-----------------------------------------------------------
 source display.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 454.184 ; gain = 182.691
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 454.320 ; gain = 181.352
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/utils_1/imports/synth_1/display.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/utils_1/imports/synth_1/display.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
 Command: synth_design -top display -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12976
+INFO: [Synth 8-7075] Helper process launched with PID 10788
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1306.082 ; gain = 439.188
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1309.871 ; gain = 440.547
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-11241] undeclared symbol 'A1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:22]
 INFO: [Synth 8-11241] undeclared symbol 'B1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:23]
 INFO: [Synth 8-11241] undeclared symbol 'C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:24]
 INFO: [Synth 8-11241] undeclared symbol 'D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:25]
-INFO: [Synth 8-11241] undeclared symbol 'A1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:28]
-INFO: [Synth 8-11241] undeclared symbol 'A1_B1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:29]
-INFO: [Synth 8-11241] undeclared symbol 'B1_C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:30]
-INFO: [Synth 8-11241] undeclared symbol 'A1B1_C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:31]
-INFO: [Synth 8-11241] undeclared symbol 'A1_B1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:35]
-INFO: [Synth 8-11241] undeclared symbol 'A1_C1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:36]
-INFO: [Synth 8-11241] undeclared symbol 'A1_C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:37]
-INFO: [Synth 8-11241] undeclared symbol 'A1_B1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:41]
-INFO: [Synth 8-11241] undeclared symbol 'A1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:42]
-INFO: [Synth 8-11241] undeclared symbol 'A1C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:48]
-INFO: [Synth 8-11241] undeclared symbol 'A1B1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:50]
-INFO: [Synth 8-11241] undeclared symbol 'B1C1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:51]
-INFO: [Synth 8-11241] undeclared symbol 'B1C1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:52]
-INFO: [Synth 8-11241] undeclared symbol 'A1_B1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:53]
-INFO: [Synth 8-11241] undeclared symbol 'B1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:56]
-INFO: [Synth 8-11241] undeclared symbol 'A1B1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:57]
-INFO: [Synth 8-11241] undeclared symbol 'C1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:58]
-INFO: [Synth 8-11241] undeclared symbol 'A1C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:59]
-INFO: [Synth 8-11241] undeclared symbol 'C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:62]
-INFO: [Synth 8-11241] undeclared symbol 'A1B1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:63]
-INFO: [Synth 8-11241] undeclared symbol 'B1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:65]
-INFO: [Synth 8-11241] undeclared symbol 'A1_B1C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:66]
-INFO: [Synth 8-11241] undeclared symbol 'A1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:71]
-INFO: [Synth 8-11241] undeclared symbol 'B1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:72]
+INFO: [Synth 8-11241] undeclared symbol 'B1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:28]
+INFO: [Synth 8-11241] undeclared symbol 'A1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:29]
+INFO: [Synth 8-11241] undeclared symbol 'A1B1_C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:30]
+INFO: [Synth 8-11241] undeclared symbol 'B1C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:31]
+INFO: [Synth 8-11241] undeclared symbol 'A1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:32]
+INFO: [Synth 8-11241] undeclared symbol 'A1_B1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:33]
+INFO: [Synth 8-11241] undeclared symbol 'A1_B1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:37]
+INFO: [Synth 8-11241] undeclared symbol 'A1_C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:38]
+INFO: [Synth 8-11241] undeclared symbol 'A1_C1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:39]
+INFO: [Synth 8-11241] undeclared symbol 'A1C1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:40]
+INFO: [Synth 8-11241] undeclared symbol 'A1B1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:43]
+INFO: [Synth 8-11241] undeclared symbol 'A1_B1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:44]
+INFO: [Synth 8-11241] undeclared symbol 'C1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:45]
+INFO: [Synth 8-11241] undeclared symbol 'A1_C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:46]
+INFO: [Synth 8-11241] undeclared symbol 'A1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:47]
+INFO: [Synth 8-11241] undeclared symbol 'A1C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:50]
+INFO: [Synth 8-11241] undeclared symbol 'B1_C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:51]
+INFO: [Synth 8-11241] undeclared symbol 'A1B1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:52]
+INFO: [Synth 8-11241] undeclared symbol 'B1C1_D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:53]
+INFO: [Synth 8-11241] undeclared symbol 'B1C1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:54]
+INFO: [Synth 8-11241] undeclared symbol 'A1_B1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:55]
+INFO: [Synth 8-11241] undeclared symbol 'A1B1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:59]
+INFO: [Synth 8-11241] undeclared symbol 'C1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:60]
+INFO: [Synth 8-11241] undeclared symbol 'A1C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:61]
+INFO: [Synth 8-11241] undeclared symbol 'C1_D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:64]
+INFO: [Synth 8-11241] undeclared symbol 'B1D1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:67]
+INFO: [Synth 8-11241] undeclared symbol 'A1_B1C1_', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:68]
+INFO: [Synth 8-11241] undeclared symbol 'A1D1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:73]
+INFO: [Synth 8-11241] undeclared symbol 'B1_C1', assumed default net type 'wire' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:74]
 INFO: [Synth 8-6157] synthesizing module 'display' [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:9]
 INFO: [Synth 8-6155] done synthesizing module 'display' (0#1) [C:/Users/Chris/Desktop/CECS-201/project_5/project_5.srcs/sources_1/new/display.v:9]
 WARNING: [Synth 8-3917] design display has port dp driven by constant 1
@@ -60,15 +70,15 @@ WARNING: [Synth 8-3917] design display has port enable[2] driven by constant 1
 WARNING: [Synth 8-3917] design display has port enable[1] driven by constant 0
 WARNING: [Synth 8-3917] design display has port enable[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1413.930 ; gain = 547.035
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.781 ; gain = 548.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1413.930 ; gain = 547.035
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.781 ; gain = 548.457
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 1413.930 ; gain = 547.035
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1417.781 ; gain = 548.457
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1413.930 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1417.781 ; gain = 0.000
