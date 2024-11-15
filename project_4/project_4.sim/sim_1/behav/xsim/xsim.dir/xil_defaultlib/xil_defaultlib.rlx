@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sim_1/new/Add4_Sim.v,1730306458,verilog,,,,Add4_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sim_1/new/AddSub_Sim.v,1730266691,verilog,,,,AddSub_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sim_1/new/FullAdd_Sim.v,1730263915,verilog,,,,FullAdd_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/Add4.v,1730263958,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/FullAdd.v,,Add4,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/AddSub.v,1730263994,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/FullAdd.v,,AddSub,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/FullAdd.v,1730263934,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sim_1/new/Add4_Sim.v,,FullAdd,,,,,,,,

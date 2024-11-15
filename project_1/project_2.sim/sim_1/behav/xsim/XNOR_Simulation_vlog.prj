@@ -1,0 +1,22 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../project_2.srcs/sources_1/new/AND_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/XOR_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/NOT_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/XNOR_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/NOR_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/NAND_Structural.v" \
+"../../../../project_2.srcs/sources_1/new/OR_Structural.v" \
+"../../../../project_2.srcs/sim_1/new/AND_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/OR_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/NOT_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/NAND_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/NOR_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/XOR_Simulation.v" \
+"../../../../project_2.srcs/sim_1/new/XNOR_Simulation.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

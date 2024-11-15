@@ -1,0 +1,16 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Christopher Chan
+// Create Date: 09/23/2024 09:45:47 AM
+// Description: Behavior of andGate
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module AND_Structural(
+    input A,
+    input B,
+    output C
+    );
+    
+    and (C, A, B);
+endmodule

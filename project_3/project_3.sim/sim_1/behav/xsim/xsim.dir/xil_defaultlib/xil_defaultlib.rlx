@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Continuous_Sim.v,1729705356,verilog,,,,Project_3_Continuous_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Procedural_Sim.v,1729705371,verilog,,,,Project_3_Procedural_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Structural_Sim.v,1729705384,verilog,,,,Project_3_Structural_Sim,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sources_1/new/Project_3_Continuous.v,1729703051,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Continuous_Sim.v,,Project_3_Continuous,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sources_1/new/Project_3_Procedural.v,1729702798,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Procedural_Sim.v,,Project_3_Procedural,,,,,,,,
+C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sources_1/new/Project_3_Structural.v,1729705517,verilog,,C:/Users/Chris/Desktop/CECS201_Fall2024/project_3/project_3.srcs/sim_1/new/Project_3_Structural_Sim.v,,Project_3_Structural,,,,,,,,

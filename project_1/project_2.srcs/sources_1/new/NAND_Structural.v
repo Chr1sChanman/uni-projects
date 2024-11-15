@@ -1,0 +1,16 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Christopher Chan
+// Create Date: 09/24/2024 09:32:05 PM
+// Description: Behavior of nandGate
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module NAND_Structural(
+    input A,
+    input B,
+    output C
+    );
+    
+    nand (C, A, B);
+endmodule

@@ -1,0 +1,16 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: Christopher Chan
+// Create Date: 09/24/2024 09:32:05 PM
+// Description: Behavior of xorGate
+//////////////////////////////////////////////////////////////////////////////////
+
+
+module XOR_Structural(
+    input A,
+    input B,
+    output C
+    );
+    
+    xor (C, A, B);
+endmodule
