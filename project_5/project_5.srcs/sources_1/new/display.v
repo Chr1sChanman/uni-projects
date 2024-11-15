@@ -33,8 +33,7 @@ module display(A1, B1, C1, D1, a, b, c, d, e, f, g, dp, enable);
 	    (A1_B1D1, A1_, B1, D1);
 	nor (a, B1_D1_, A1D1_, A1B1_C1_, B1C1, A1_C1, A1_B1D1);   // Use NOR for A1C1TIVE LOW output
 	// Segment b
-	and (B1_D1_, B1_, D1_),
-        (A1_B1_, A1_, B1_),
+	and (A1_B1_, A1_, B1_),
         (A1_C1_D1_, A1_, C1_, D1_),
         (A1_C1D1, A1_, C1, D1),
         (A1C1_D1, A1, C1_, D1);
@@ -55,8 +54,7 @@ module display(A1, B1, C1, D1, a, b, c, d, e, f, g, dp, enable);
 	    (A1_B1_C1, A1_, B1_, C1);
     nor (d, A1C1_, B1_C1_D1_, A1B1_D1, B1C1_D1, B1C1D1_, A1_B1_C1);
 	// Segment e
-	and (B1_D1_, B1_, D1_),
-	    (A1B1, A1, B1),
+	and (A1B1, A1, B1),
 	    (C1D1_, C1, D1_),
 	    (A1C1, A1, C1);
     nor (e, B1_D1_, A1B1, C1D1_, A1C1);
