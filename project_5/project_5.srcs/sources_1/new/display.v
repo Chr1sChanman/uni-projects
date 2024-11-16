@@ -48,12 +48,11 @@ module display(A1, B1, C1, D1, a, b, c, d, e, f, g, dp, enable);
 	nor (c, A1B1_, A1_B1, C1_D1, A1_C1_, A1_D1);
 	// Segment d
 	and (A1C1_, A1, C1_),
-	    (B1_C1_D1_, B1_, C1_, D1_),
-	    (A1B1_D1, A1, B1_, D1),
-	    (B1C1_D1, B1, C1_, D1),
+	    (A1_B1_D1_, A1_, B1_, D1_),
 	    (B1C1D1_, B1, C1, D1_),
-	    (A1_B1_C1, A1_, B1_, C1);
-    nor (d, A1C1_, B1_C1_D1_, A1B1_D1, B1C1_D1, B1C1D1_, A1_B1_C1);
+	    (B1_C1D1, B1_, C1, D1),
+	    (B1C1_D1, B1, C1_, D1);
+	nor (d, A1C1_, A1_B1_D1_, B1C1D1_, B1_C1D1, B1C1_D1);
 	// Segment e
 	and (A1B1, A1, B1),
 	    (C1D1_, C1, D1_),
