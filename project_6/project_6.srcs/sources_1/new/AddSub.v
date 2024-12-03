@@ -15,7 +15,7 @@ module AddSub(
     output dp
     );
     
-    wire [3:0] Result;
+    wire [3:0]Result;
     
     wire [3:0]y_comp;
     assign y_comp[0] = y[0] ^ Select;
@@ -23,10 +23,10 @@ module AddSub(
     assign y_comp[2] = y[2] ^ Select;
     assign y_comp[3] = y[3] ^ Select;
      
-    FullAdd u1(x[0], y_comp[0], Select, Result[0], C0);
-    FullAdd u2(x[1], y_comp[1], C0, Result[1], C1);
-    FullAdd u3(x[2], y_comp[2], C1, Result[2], C2);
-    FullAdd u4(x[3], y_comp[3], C2, Result[3], Cout);
+    FullAdd u1(x[0], (y[0] ^ Select), Select, Result[0], C0);
+    FullAdd u2(x[1], (y[1] ^ Select), C0, Result[1], C1);
+    FullAdd u3(x[2], (y[2] ^ Select), C1, Result[2], C2);
+    FullAdd u4(x[3], (y[3] ^ Select), C2, Result[3], Cout);
     
     display d1(Result[3], Result[2], Result[1], Result[0], a, b, c, d, e, f, g, dp, enable);
 endmodule
