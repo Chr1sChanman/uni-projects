@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Mon Dec  2 20:41:51 2024
+# Process ID: 6972
+# Current directory: C:/Users/Chris/Desktop/CECS-201/project_6/project_6.runs/impl_1
+# Command line: vivado.exe -log AddSub.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source AddSub.tcl -notrace
+# Log file: C:/Users/Chris/Desktop/CECS-201/project_6/project_6.runs/impl_1/AddSub.vdi
+# Journal file: C:/Users/Chris/Desktop/CECS-201/project_6/project_6.runs/impl_1\vivado.jou
+# Running On: Chris-PC, OS: Windows, CPU Frequency: 2295 MHz, CPU Physical cores: 2, Host memory: 17048 MB
+#-----------------------------------------------------------
+source AddSub.tcl -notrace
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 454.270 ; gain = 183.660
+Command: link_design -top AddSub -part xc7a100tcsg324-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 870.379 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.2
+INFO: [Project 1-570] Preparing netlist for logic optimization

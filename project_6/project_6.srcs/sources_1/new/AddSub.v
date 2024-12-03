@@ -8,6 +8,7 @@ module AddSub(
     input [3:0] x,
     input [3:0] y,
     input Select,
+    output [3:0] Result,
     output Cout,
     output a, b, c, d, e, f, g,
     output [3:0] enable,
