@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.runs/impl_1/AddSub.tcl"
+  variable script "C:/Users/Chris/Desktop/CECS-201/project_4/project_4.runs/impl_1/AddSub.tcl"
   variable category "vivado_impl"
 }
 
@@ -126,7 +126,7 @@ set rc [catch {
   set_param chipscope.maxJobs 1
   set_param runs.launchOptions { -jobs 2  }
   open_checkpoint AddSub_routed.dcp
-  set_property webtalk.parent_dir C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.cache/wt [current_project]
+  set_property webtalk.parent_dir C:/Users/Chris/Desktop/CECS-201/project_4/project_4.cache/wt [current_project]
 set_property TOP AddSub [current_fileset]
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }

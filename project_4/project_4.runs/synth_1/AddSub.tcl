@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.runs/synth_1/AddSub.tcl"
+  variable script "C:/Users/Chris/Desktop/CECS-201/project_4/project_4.runs/synth_1/AddSub.tcl"
   variable category "vivado_synth"
 }
 
@@ -76,19 +76,19 @@ create_project -in_memory -part xc7a100tcsg324-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.cache/wt [current_project]
-set_property parent.project_path C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/Chris/Desktop/CECS-201/project_4/project_4.cache/wt [current_project]
+set_property parent.project_path C:/Users/Chris/Desktop/CECS-201/project_4/project_4.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
 set_property board_part_repo_paths {C:/Users/Chris/AppData/Roaming/Xilinx/Vivado/2023.2/xhub/board_store/xilinx_board_store} [current_project]
 set_property board_part digilentinc.com:nexys-a7-100t:part0:1.2 [current_project]
-set_property ip_output_repo c:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.cache/ip [current_project]
+set_property ip_output_repo c:/Users/Chris/Desktop/CECS-201/project_4/project_4.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_verilog -library xil_defaultlib {
-  C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/FullAdd.v
-  C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/sources_1/new/AddSub.v
+  C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/sources_1/new/FullAdd.v
+  C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/sources_1/new/AddSub.v
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -99,12 +99,12 @@ OPTRACE "Adding files" END { }
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc
-set_property used_in_implementation false [get_files C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc]
+read_xdc C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc
+set_property used_in_implementation false [get_files C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/utils_1/imports/synth_1/Add4.dcp
+read_checkpoint -auto_incremental -incremental C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/utils_1/imports/synth_1/Add4.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

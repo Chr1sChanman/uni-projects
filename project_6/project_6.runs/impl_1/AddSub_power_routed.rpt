@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date             : Mon Dec  2 21:56:53 2024
+| Date             : Tue Dec  3 13:01:06 2024
 | Host             : Chris-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file AddSub_power_routed.rpt -pb AddSub_power_summary_routed.pb -rpx AddSub_power_routed.rpx
 | Design           : AddSub
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+----------------------------------+
-| Total On-Chip Power (W)  | 23.869 (Junction temp exceeded!) |
+| Total On-Chip Power (W)  | 23.824 (Junction temp exceeded!) |
 | Design Power Budget (W)  | Unspecified*                     |
 | Power Budget Margin (W)  | NA                               |
-| Dynamic (W)              | 23.072                           |
+| Dynamic (W)              | 23.027                           |
 | Device Static (W)        | 0.797                            |
 | Effective TJA (C/W)      | 4.6                              |
 | Max Ambient (C)          | 0.0                              |
@@ -52,13 +52,13 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.105 |       17 |       --- |             --- |
-|   LUT as Logic |     0.105 |       13 |     63400 |            0.02 |
+| Slice Logic    |     0.098 |       17 |       --- |             --- |
+|   LUT as Logic |     0.098 |       13 |     63400 |            0.02 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.360 |       24 |       --- |             --- |
+| Signals        |     0.322 |       24 |       --- |             --- |
 | I/O            |    22.607 |       26 |       210 |           12.38 |
 | Static Power   |     0.797 |          |           |                 |
-| Total          |    23.869 |          |           |                 |
+| Total          |    23.824 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,7 +68,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     1.064 |       0.501 |      0.563 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     1.019 |       0.456 |      0.563 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.920 |       0.827 |      0.093 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     6.392 |       6.388 |      0.004 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -135,7 +135,7 @@ Table of Contents
 +--------+-----------+
 | Name   | Power (W) |
 +--------+-----------+
-| AddSub |    23.072 |
+| AddSub |    23.027 |
 +--------+-----------+
 
 

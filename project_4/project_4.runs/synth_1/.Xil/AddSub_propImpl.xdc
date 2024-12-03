@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Chris/Desktop/CECS201_Fall2024/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc rfile:../../../project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Chris/Desktop/CECS-201/project_4/project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc rfile:../../../project_4.srcs/constrs_1/new/proj4_AddSub_const.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN J15   IOSTANDARD LVCMOS33 } [get_ports { x[0] }]; #IO_L24N_T3_RS0_15 Sch=sw[0]
 set_property src_info {type:XDC file:1 line:13 export:INPUT save:INPUT read:READ} [current_design]
