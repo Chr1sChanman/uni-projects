@@ -5,16 +5,15 @@
 // Description: Structural code for AddSub
 //////////////////////////////////////////////////////////////////////////////////
 module AddSub(
-    input [3:0] x,
-    input [3:0] y,
+    input [3:0]x,
+    input [3:0]y,
     input Select,
     output a, b, c, d, e, f, g, dp,
-    output [3:0] enable,
-    output [3:0] Result,
+    output [3:0]enable,
     output Cout
     );
     
-    wire [3:0] Result;
+    wire [3:0]Result;
     
     wire [3:0]y_comp;
     assign y_comp[0] = y[0] ^ Select;
