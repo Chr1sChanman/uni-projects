@@ -1,0 +1,1 @@
+Folder to store all coding projects from California State University Long Beach
