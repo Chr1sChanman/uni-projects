@@ -1,16 +1,47 @@
-import numpy as np
+import numpy as np 
 import matplotlib.pyplot as plt
-###### Example 1.11 ##########
-# load text file
-fname = '/Users/christopherchan/Downloads/exp01-11.csv' # comma separated values
-data1 = np.loadtxt(fname, delimiter=',', skiprows=1) #skip first row
-#print (data1)
-fig, ax = plt.subplots(1, 2) # Create a figure containing a single axes
-ax[0].hist(data1, ec='black')
-ax[0].set_title("Equal width bins")
-ax[1].hist(data1, ec='black', bins=[2, 4, 6, 8, 12, 20, 30])
-ax[1].set_title("Unequal width")
-ax[0].set_xlabel('Bond strength')
-ax[1].set_xlabel('Bond strength')
-ax[0].set_ylabel('')
+
+fname = '/Users/christopherchan/Downloads/Sales_01_20.csv'
+data = np.genfromtxt(fname, delimiter=',', skip_header=1, dtype=int)
+
+# Select all rows in columns 0 and 1 respectively
+yearList = data[:,0]
+salesPrice = data[:,1]
+
+yearlySales = {year: [] for year in range(2001, 2021)}
+
+for year, price in zip(yearList,salesPrice):
+    if year in yearlySales:
+        yearlySales[year].append(price)
+
+mean = []
+std_dev = []
+year_list = list(yearlySales.keys())
+
+for year in year_list:
+    yearlyStats = yearlySales[year]
+    if yearlyStats:
+        mean.append(np.mean(yearlyStats))
+        std_dev.append(np.std(yearlyStats))
+    else:
+        mean.append(0)
+        std_dev.append(0)
+
+fig, ax = plt.subplots(1, 2, figsize=(12, 6))
+
+ax[0].bar(year_list, mean)
+ax[0].set_title("Mean Sales Amount by Year")
+ax[0].set_xlabel('Year')
+ax[0].set_ylabel('Mean Sale Amount')
+ax[0].set_xticks(year_list)
+ax[0].set_xticklabels(year_list, rotation=45)
+
+ax[1].bar(year_list, std_dev)
+ax[1].set_title("Standard Deviation of Sales Amount by Year")
+ax[1].set_xlabel('Year')
+ax[1].set_ylabel('Standard Deviation')
+ax[1].set_xticks(year_list)
+ax[1].set_xticklabels(year_list, rotation=45)
+
+plt.tight_layout
 plt.show()
